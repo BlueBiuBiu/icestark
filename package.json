@@ -1,0 +1,30 @@
+{
+  "name": "mainapp",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.4",
+    "element-plus": "^2.2.4",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "less": "^4.1.2",
+    "prettier": "^2.6.2",
+    "unplugin-auto-import": "^0.8.7",
+    "unplugin-element-plus": "^0.4.0",
+    "unplugin-icons": "^0.14.3",
+    "unplugin-vue-components": "^0.19.6",
+    "vite": "^2.9.9"
+  }
+}
