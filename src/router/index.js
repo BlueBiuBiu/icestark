@@ -10,12 +10,12 @@ const routes = [
   {
     path: '/vue',
     name: 'vue',
-    component: () => import('@/components/Vue'),
+    component: () => import('@/components/Vue/index.vue'), // 在vite中导入.vue文件时后缀不能省略
   },
   {
     path: '/react',
     name: 'react',
-    component: () => import('@/components/React'),
+    component: () => import('@/components/React/index.vue'),
   },
 ]
 
@@ -25,11 +25,8 @@ const router = createRouter({
 })
 
 
-router.beforeEach((to,from) => {
-  console.log('from',to);
-  if (to.fullPath === from.fullPath) {
-    return false
-  }
-})
+// router.beforeEach((to,from) => {
+  
+// })
 
 export default router

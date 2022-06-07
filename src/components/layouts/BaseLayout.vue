@@ -4,7 +4,7 @@
       <el-header><Header /></el-header>
       <el-container>
         <el-aside width="200px"><Aside /></el-aside>
-        <el-main><Main /></el-main>
+        <el-main><Main v-bind="props"/></el-main>
       </el-container>
     </el-container>
   </div>
@@ -14,6 +14,17 @@
 import Aside from './Aside.vue'
 import Main from './Main.vue'
 import Header from './Header.vue'
+const props = defineProps({
+  microAppsActive: {
+    type: Boolean,
+    required: true
+  },
+  loading: {
+    type: Boolean,
+    required: true
+  },
+})
+
 </script>
 
 <style lang="less" scoped>

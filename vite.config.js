@@ -34,5 +34,12 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
+    proxy: {
+      "/vue": {
+        target: 'http://localhost:9000/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/vue/, '')
+      }
+    }
   },
 })
